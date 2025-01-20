@@ -1,0 +1,532 @@
+header img {
+    width: 10%;
+    margin-top: 0.5%;
+
+}
+
+header input[type="search"] {
+    padding: 1%;
+    width: 20%;
+    margin-top: 3.5%;
+    position: absolute;
+    margin-left: 60%;
+    background: none;
+    border-radius: 30px;
+
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header .parag {
+    text-align: center;
+    background-color: palevioletred;
+    letter-spacing: 3px;
+    position: absolute;
+    width: 100%;
+margin-top: 0%;
+}
+
+header .user {
+    margin-left: 78%;
+    margin-top: 4%;
+    position: absolute;
+    width: 10%;
+    color: black;
+    font-size: 30px;
+}
+
+header .user1 {
+    margin-left: 80%;
+    margin-top: 4%;
+    position: absolute;
+    width: 10%;
+
+    font-size: 15px;
+    text-decoration: none;
+}
+header .user1 a {
+    color: #9e4f7e; /* Utilise une couleur complémentaire au reste du site */
+    font-size: 16px; /* Taille de police cohérente avec le reste du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    padding: 5px 10px; /* Ajoute un peu de padding pour plus de clarté */
+    border-radius: 5px; /* Ajoute des coins arrondis */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Effet de transition pour le survol */
+}
+
+header .user1 a:hover {
+    background-color: #dba0c3; /* Couleur de fond lors du survol */
+    color: #fff; /* Couleur du texte lors du survol */
+    text-decoration: underline; /* Soulignement lors du survol */
+}
+
+
+header .panier {
+    margin-left: 82%;
+    margin-top: 4%;
+    position: absolute;
+    width: 10%;
+    color: black;
+    font-size: 30px;
+}
+.panier2{
+      margin-left: 82%;
+    margin-top: 4%;
+    position: absolute;
+    width: 10%;
+    color: black;
+    font-size: 30px;
+}
+header i {
+    margin-left: 78%;
+    margin-top: 4.5%;
+    position: absolute;
+    width: 10%;
+}
+
+nav .sousmenu {
+    display: block;
+    margin-right: 15px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10%;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav .menu {
+    display: inline-block;
+    margin-right: 20px;
+
+    margin-top: 10%;
+
+
+    &:hover {
+        .submenu {
+            height: 500px;
+        }
+
+        a {
+            color: #e98ddd41;
+
+            &::before {
+                visibility: visible;
+                transform: scale(1, 1);
+            }
+        }
+    }
+
+    .submenu {
+        overflow: hidden;
+        position: absolute;
+
+        width: 10%;
+        background-color: #c1bcc0;
+        height: 0;
+        line-height: 40px;
+        box-sizing: border-box;
+        transition: height 0.2s ease-in-out 0.1s;
+        transition-delay: 0.1s;
+    }
+
+    .submenu a {
+        color: #fff;
+        margin-top: 20px;
+        font-size: 16px;
+
+        &:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+}
+
+nav a {
+    color: #999;
+    display: block;
+    padding: 0 7px 0 7px;
+    margin: 0 0 10px;
+    text-decoration: none;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: -10px;
+        left: 0px;
+        background-color: #dccfd2;
+        transition: all 0.2s ease-in-out;
+        transform: scale(0, 0);
+        visibility: hidden;
+        margin-left: 20px;
+    }
+}
+
+nav .sousmenu {
+    display: block;
+    margin-right: 15px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10%;
+}
+
+.image12 {
+    margin-left: 35px;
+    width: 95%;
+}
+
+main .promo {
+    background-color: beige;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    border-top: solid sienna;
+    border-bottom: solid sienna;
+}
+
+
+
+main .p4 {
+    margin-left: 3%;
+    font-size: 17px;
+
+}
+
+
+
+
+
+main .par {
+    display: inline-flex;
+    margin-left: 6%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+main .p2 {
+    margin-left: 20%;
+
+}
+
+main .p3 {
+    margin-left: 10%;
+    color: red;
+}
+
+main .p1 {
+    color: red;
+}
+
+main .button {
+    min-width: 120px;
+    margin-left: 25%;
+    position: relative;
+    cursor: pointer;
+
+    padding: 12px 17px;
+    border: 0;
+    border-radius: 7px;
+
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    background: radial-gradient(ellipse at bottom,
+            rgba(71, 81, 92, 1) 0%,
+            rgba(11, 21, 30, 1) 45%);
+
+    color: rgb(255, 255, 255, 0.66);
+
+    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+main .button::before {
+    content: "";
+    width: 70%;
+    height: 1px;
+
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    opacity: 0.2;
+
+    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+main .button:hover {
+    color: rgb(255, 255, 255, 1);
+    transform: scale(1.1) translateY(-3px);
+}
+
+main .button:hover::before {
+    opacity: 1;
+}
+
+main i {
+    position: absolute;
+    margin-right: 15%;
+}
+
+ main section .bloc {
+display:inline-block ;
+    width:20%;
+    padding: 1%;
+    margin: 2%;
+    margin-left: 8%;
+}
+
+main section .bloc:hover {
+    border: 1px solid gray;
+    width: 20%;
+    padding: 1%;
+    background-color: rgba(226, 172, 204, 0.14);
+    border-radius: 10%;
+}
+
+main section img {
+    width: 90%;
+}
+
+main .p23 {
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.footer1 {
+    margin-top: 10%;
+
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #dccfd2;
+
+}
+
+footer .paiement {
+    width: 40px;
+}
+
+footer .content {
+
+    bottom: 0;
+    left: 20px;
+
+    color: rgb(115, 91, 91);
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer .Row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer-colon {
+
+    padding: 20px;
+    width: 25%;
+    text-align: justify;
+
+
+
+}
+
+.footer-colon h4 {
+    font-size: 20px;
+    color: rgb(115, 84, 84);
+    text-transform: capitalize;
+
+
+    margin-bottom: 20px;
+}
+
+
+
+footer a {
+    font-size: 16px;
+    color: #9e4f7e;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #b481a4;
+
+}
+
+footer ul li a:hover {
+    color: #e6c4eb;
+    padding-left: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(148, 171, 191);
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+
+}
+
+.social-links a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+footer .paiement {
+    border-radius: 50%;
+}
+
+.paiement a:hover {
+    width: 50%;
+    padding-left: 8px;
+    color: #b481a4;
+
+}
+
+
+
+
+.user {
+    color: rgb(129, 97, 97);
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    /* Positionnement relatif pour le formulaire */
+}
+
+/* Styles pour le formulaire qui apparaît au survol */
+.form-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Positionne le formulaire sous le lien */
+    left: 0;
+    background-color: #f0d6e5;
+    border: 1px solid #888;
+    padding: 40px;
+    width: 200px;
+    /* Largeur du formulaire */
+    z-index: 10;
+    /* Assure que le formulaire s'affiche au-dessus des autres éléments */
+    height: 400px;
+}
+
+/* Affiche le formulaire lorsque le lien est survolé */
+.user:hover .form-container {
+    display:block;
+
+}
+
+/* Styles pour le formulaire */
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    margin-top: 5%;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+
+}
+
+.submit-button {
+    background-color: #dba0c3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+.submit-button:hover {
+    color: #9e4f7e;
+    width: 150px;
+    background-color: white;
+    padding: 10px;
+    border:2px solid #9e4f7e;
+}
+
+.mdp12 {
+    font-size: 13px;
+ 
+}
+
+.h4log {
+    font-size: 15px;
+    margin-top: 15px
+
+}
+
+.plog {
+    font-size: 10px;
+    margin-top: 5px; 
+   text-align: center;
+   letter-spacing: 2px;
+}
+.inplog{
+    text-align: center;
+    background-color:  #dba0c3;
+    padding: 10px;
+    position: absolute;
+    margin-left: 8%;
+    border:none;
+    color: white;
+    width: 50%;
+}
+.inplog:hover{
+    color: #9e4f7e;
+    width: 150px;
+    background-color: white;
+    padding: 10px;
+    border:2px solid #9e4f7e;
+}
+#i1{
+    margin-top: -10%;
+    position: absolute;
+    font-size: 70%;
+    margin-left: 68%;
+}
+#i2{
+    position: absolute;
+    font-size: 70%;
+    margin-top: -10%;
+    margin-left: 68%;
+}
+ 
