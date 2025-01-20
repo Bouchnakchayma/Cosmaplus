@@ -1,0 +1,50 @@
+create table produits (
+    idp int,
+    nompr varchar(255),
+    descriptionpr varchar(255),
+      catégorie varchar(255),
+   prix decimal(8,5),
+    image varchar(255),
+  PRIMARY KEY( idp) );
+/******************************************
+create table user(
+    idc int,
+    nomc varchar(255),
+  adressec varchar(255),
+      emailc varchar(255),
+   numtel int,
+    usernamec varchar(255),
+    passwordc varchar(255),
+  PRIMARY KEY( idc) );
+/******************************************
+create table admin(
+    ida int,
+    noma varchar(255),
+      emaila varchar(255),
+    usernamea varchar(255),
+    passworda varchar(255),
+  PRIMARY KEY( ida) );
+/*****************************************
+
+create table commande(
+    idcom int AUTO_INCREMENT,
+ date_commande date,
+    etat varchar(255),
+    id_produit INT,
+    id_client int,
+  PRIMARY KEY( idcom),
+FOREIGN KEY(id_produit)REFERENCES produits(idp),
+FOREIGN KEY(id_client)REFERENCES user(idc)
+
+);
+
+create table panier(
+id_panier INT,
+id_produit int,
+    id_client int,
+    prixpr decimal(8,3),
+    quantité int,
+    PRIMARY key (id_panier),
+    FOREIGN key (id_produit) REFERENCES produits (idp),
+    FOREIGN KEY (id_client)REFERENCES user (idc)
+)

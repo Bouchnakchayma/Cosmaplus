@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajouter produits</title>
+</head>
+
+<body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>loginadmin</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+            }
+
+            .admin-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                background-color: #2c3e50;
+                color: white;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+
+            }
+
+            .logo h1 {
+                margin: 0;
+                font-size: 24px;
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin-left: 20px;
+            }
+
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+            }
+
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+
+            main form input,
+            select {
+                margin-left: 30%;
+                width: 30%;
+                margin-top: 20px;
+                padding: 1%;
+            }
+
+            main form label {
+                margin-left: 30%;
+                font-size: 70%;
+
+            }
+
+            main form button {
+                margin-top: 1%;
+                margin-left: 42%;
+                padding: 10px;
+                background-color: #95b475;
+                color: white;
+                border: none;
+                border-radius: 2px;
+                padding-left: 40px;
+                padding-right: 40px;
+                margin-bottom: 1%;
+            }
+
+            main #vvv {
+                margin-left: 35%;
+                margin-top: 5%;
+                font-size: 40px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="admin-header">
+            <div class="logo">
+                <h1>Cosmaplus</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="http://localhost/Mon%20Site/loginadmin.php">Utilisateurs</a></li>
+                    <li><a href="http://localhost/Mon%20Site/produits.php">Produits</a></li>
+                    <li><a href="http://localhost/Mon%20site/commandeadmin.php">commandes</a></li>
+             
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 id="vvv">Nouveau produits</h2>
+            <form action="addproducts.php" method="post" enctype="multipart/form-data">
+                <input type="text" placeholder="Nom Produit" id="nompr" name="nompr" required><br>
+                <input type="text" placeholder="Description" id="descriptionpr" name="descriptionpr" required><br>
+                <select name="catégoriepr" id="" >
+                    <option value="">selectionner catégorie</option>
+                    <option value="Maquillage">Maquillage</option>
+                    <option value="soins visage">soins visage</option>
+                    <option value="cheveux">cheveux</option>
+                    <option value="ongles">ongles</option>
+                    <option value="Accessoire">Accessoire</option>
+                    <option value="promo">promo</option>
+                </select>
+                <select name="typepr" id="">
+                    <option value="">selectionner type</option>
+                    <option value="Non spécifique">Non spécifique</option>
+                    <option value="En promotion">En promotion</option>
+                    <option value="Meilleurs ventes">Meilleurs ventes</option>
+                  
+                    
+                </select>
+
+
+                <input type="text" placeholder="Prix du produit" id="prixpr" name="prixpr" required><br>
+                <label for="image" id="ddd">Sélectionnez une image :</label><br>
+                <input type="file" name="image" id="image" name="image"><br>
+                <input type="submit" value="Ajouter Produit">
+
+            </form>
+        </main>
+
+
+
+        </form>
+    </body>
+
+</html>
